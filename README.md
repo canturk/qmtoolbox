@@ -30,7 +30,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 Contents of "qmtoolbox/"
 
 1) "qmtrajectory_sample_run.py" is a basic simulation file. 
-When we run this file it will creates output directory and data files.
+When we run this file it creates output directory and data files.
 Next, it generates 1/f noise (S13) and outputs the data in the current directory
 unless they already exist. This step is followed by the generation of 
 the trajectory of the quadrature measurement. Finally the outcome data and figures
@@ -43,7 +43,7 @@ it will generate a new figure.
 
 2) "qmtools/" consists of required package files
 	
-	(a) "__init__.py" used to mark "qmtools/" as Python package directory
+	(a) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
 	
 	(b) "quad.py" contains the class hierarchy in the form of UML: 
 	
