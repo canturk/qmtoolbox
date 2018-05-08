@@ -5,24 +5,26 @@ Introduction
 
 This package is devoted to simulate quadrature detection protocol of a harmonic
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
-a time-dependent Hamiltonian (S15) in supplamentary material in [1]. 
+a time-dependent Hamiltonian (S15) in the supplamentary material [1]. 
 It performs high fedelity measurement and generate squeezed states of the HO
 which can be either electrical or mechanical resonator.
 
 The measurement protocol consists of repeating procedure in Fig.S1 [1]. 
 The qubit and HO start in a separable state where qubit is in ground and HO 
-in thermal (coherent and Fock state as well) states respectively.
+in thermal (or coherent or Fock) state respectively.
 
-The qubit is controlled by resonant pulses (i.g spin echo or CPMG sequence)
+The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.1(a) or Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically obtained by mesolve in QuTiP 
+free precession times is numerically computed by mesolve in QuTiP 
 [www.qutip.org] governed by the Hamiltonian (S15). 
-The influence of the qubit dephasing induced by its environment is considered 
-in the Hamiltonian (S15) whereas the contribution of the dissipated effects 
-of the coupled system are considered in the master equation (S14).
-The measurement trajectory of the quadrature and variance are obtained by 
-series repetition of the protocol illustrated in Fig.S1.
+The influence of the qubit dephasing induced by its intrinsic environment
+(i.e. 1/f noise) is considered in the Hamiltonian (S15). Similarly, 
+the contribution of the dissipated effects of the coupled system 
+are considered in the master equation (S14).
+
+The outcome of measurement trajectory of the quadrature $I=a+a^\dagger$ and variance $(\Delta I)^2$
+are obtained by series repetition of the protocol illustrated in Fig.S1.
 A sample trajectory is obtained by this tool is shown "qtraj.png".
 
 Contents of "qmtoolbox/"
