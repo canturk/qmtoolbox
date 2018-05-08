@@ -41,6 +41,7 @@ If you repeat the experiment several times, the
 	(a) "__init__.py" used to mark "qmtools/" as Python package directory
 	
 	(b) "quad.py" contains the inherited class hierarchy: 
+	
 					   +-------------+
 					   | QuadMeasure |
 					   +------^------+
