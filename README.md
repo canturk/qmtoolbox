@@ -94,7 +94,9 @@ If you repeat the experiment several times, the
 	(e) "qpar.py" contains a dictionary (pars) for System Parameters.
 
 	
-Reference: [1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
+Reference: 
+
+[1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
 of squeezed states of a harmonic oscillator using a qubit-based indirect 
 measurement, arXiv:1704.04533, (2017)
 
