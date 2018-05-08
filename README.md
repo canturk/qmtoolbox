@@ -64,7 +64,7 @@ it will generate a new figure.
 	for HO coupled to the qubit. It setups qubit-HO systems, and simulates
 	quadrature measurement and generates a measurement trajectory.
 	
-	- ThermalQMP, inherited from QuadMeasure, describes either 
+	- ThermalQM, inherited from QuadMeasure, describes either 
 	thermal inital state or initial thermal displacement state of HO
     at a given temperature.
 	
