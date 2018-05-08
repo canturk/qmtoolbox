@@ -1,7 +1,7 @@
 # qmtoolbox
 Simulation ToolBox for Quadrature Measurement of Harmonic Oscillator using Qubit
 
-Introduction
+INTRODUCTION
 
 This package is devoted to simulate quadrature detection protocol of a harmonic
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
@@ -27,9 +27,10 @@ The outcome of measurement trajectory of the quadrature and variance
 are obtained by series repetition of the protocol illustrated in Fig.S1.
 A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result.png".
 
-Contents of "qmtoolbox/"
 
-1) "qmtrajectory_sample_run.py" is a basic simulation file. 
+DESCRIPTION OF SIMULATION TOOLBOX (qmtoolbox)
+
+1) RUN FILE: "qmtrajectory_sample_run.py" 
 When we run this file it creates output directory and data files.
 Next, it generates 1/f noise (S13) and outputs the data in the current directory
 unless they already exist. This step is followed by the generation of 
@@ -41,8 +42,7 @@ If you run the simulation script (qmtrajectory_sample_run.py) once more
 it will follow up all steps (above) except the generation of the nose data, 
 it will generate a new figure.
 
-2) "qmtools/" consists of required package files
-	
+2) PACKAGE FILES in  "qmtools/":
 	
 	(a) "quad.py" contains the class hierarchy in the form of UML: 
 	
