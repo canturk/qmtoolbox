@@ -45,7 +45,7 @@ If you repeat the experiment several times, the
 
                        +-------------+
                        | QuadMeasure |
-					   +------^------+
+                       +------^------+
                              / \
                               |
                --------------------------------
