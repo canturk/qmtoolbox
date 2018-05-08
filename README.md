@@ -42,16 +42,18 @@ If you repeat the experiment several times, the
 	
 	(b) "quad.py" contains the inherited class hierarchy: 
 	
-					   +-------------+
-					   | QuadMeasure |
+
+                       +-------------+
+                       | QuadMeasure |
 					   +------^------+
-					         / \
-						 	  |
-			   --------------------------------
-			   |              |               |
-	   +-----------+    +----------+   +-------------+
-	   | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
-	   +-----------+    +----------+   +-------------+
+                             / \
+                              |
+               --------------------------------
+               |              |               |
+       +-----------+    +----------+   +-------------+
+       | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
+       +-----------+    +----------+   +-------------+
+	   
 (*) The implementation of FockQM and CoherentQM are removed from "quad.py".
 	
 	- QuadMeasure, a base class, defines a quadrature measurement protocol 
@@ -65,16 +67,16 @@ If you repeat the experiment several times, the
 	(c) "qsim.py" contains a class called QuadSim which has an object 
 	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. 
 
-					   +-------------+                +-------------+
-					   | QuadMeasure |----------------|   QuadSim   |
-					   +------^------+                +-------------+
-					         / \
-						 	  |
-			   --------------------------------
-			   |              |               |
-	   +-----------+    +----------+   +-------------+
-	   | ThermalQM |    |  FockQM  |   | CoherentQM  |
-	   +-----------+    +----------+   +-------------+
+                       +-------------+                +-------------+
+                       | QuadMeasure |----------------|   QuadSim   |
+                       +------^------+                +-------------+
+                             / \
+                              |
+               --------------------------------
+               |              |               |
+       +-----------+    +----------+   +-------------+
+       | ThermalQM |    |  FockQM  |   | CoherentQM  |
+       +-----------+    +----------+   +-------------+
 	
 	QuadSim manages the simulation of the measurement for various input parameters. 
 		- Computes required parameters from the dictionary to support QuadMeasure
