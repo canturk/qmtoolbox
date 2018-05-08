@@ -43,9 +43,8 @@ it will generate a new figure.
 
 2) "qmtools/" consists of required package files
 	
-	(a) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
 	
-	(b) "quad.py" contains the class hierarchy in the form of UML: 
+	(a) "quad.py" contains the class hierarchy in the form of UML: 
 	
 
                        +-------------+
@@ -70,7 +69,7 @@ it will generate a new figure.
     at a given temperature.
 	
 
-	(c) "qsim.py" contains a class called QuadSim which has an object 
+	(b) "qsim.py" contains a class called QuadSim which has an object 
 	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. The 
 	UML below shows the relationship between QuadSim and QuadMeasure.
 	
@@ -92,13 +91,14 @@ it will generate a new figure.
 		* Generates presentation file in LaTeX (beamer) (Removed from this version for simplicity). 
 		
 	
-	(d) "qutil.py" consists of 
+	(c) "qutil.py" consists of 
 		- Call-back functions for Hamiltonian (S15) 
 		- Module to creates visual and data representations 
 		- Saves data/plots in the destination directory, 
 		
-	(e) "qpar.py" contains a dictionary (pars) for System Parameters.
+	(d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
+	(e) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
 	
 Reference: 
 
