@@ -93,6 +93,6 @@ If you repeat the experiment several times, the
 	
 Reference: [1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
 of squeezed states of a harmonic oscillator using a qubit-based indirect 
-measurement, arXiv:1704.04533, 2017
+measurement, arXiv:1704.04533, (2017)
 
 
