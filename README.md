@@ -40,7 +40,7 @@ If you repeat the experiment several times, the
 	
 	(a) "__init__.py" used to mark "qmtools/" as Python package directory
 	
-	(b) "quad.py" contains the inherited class hierarchy: 
+	(b) "quad.py" contains the class hierarchy in the form of UML: 
 	
 
                        +-------------+
@@ -54,7 +54,7 @@ If you repeat the experiment several times, the
        | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
        +-----------+    +----------+   +-------------+
 	   
-(*) The implementation of FockQM and CoherentQM are removed from "quad.py".
+	(*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
 	- QuadMeasure, a base class, defines a quadrature measurement protocol 
 	for HO coupled to the qubit. It setups qubit-HO systems, and simulates
@@ -64,8 +64,10 @@ If you repeat the experiment several times, the
 	thermal inital state or initial thermal displacement state of HO
     at a given temperature.
 	
+
 	(c) "qsim.py" contains a class called QuadSim which has an object 
 	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. 
+	
 
                        +-------------+                +-------------+
                        | QuadMeasure |----------------|   QuadSim   |
@@ -78,11 +80,12 @@ If you repeat the experiment several times, the
        | ThermalQM |    |  FockQM  |   | CoherentQM  |
        +-----------+    +----------+   +-------------+
 	
-	QuadSim manages the simulation of the measurement for various input parameters. 
-		- Computes required parameters from the dictionary to support QuadMeasure
-		- Obtains simulation results, 
-		- Generates presentation file in LaTeX (beamer) (Removed from this version for simplicity). 
+	- QuadSim manages the simulation of the measurement for various input parameters. 
+		* Computes required parameters from the dictionary to support QuadMeasure
+		* Obtains simulation results, 
+		* Generates presentation file in LaTeX (beamer) (Removed from this version for simplicity). 
 		
+	
 	(d) "qutil.py" consists of 
 		- Call-back functions for Hamiltonian (S15) 
 		- Module to creates visual and data representations 
