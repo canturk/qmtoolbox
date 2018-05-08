@@ -31,7 +31,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 DESCRIPTION OF SIMULATION TOOLBOX (qmtoolbox)
 
 
-1) RUN FILE: "qmtrajectory_sample_run.py" 
+1) MAIN FILE TO RUN: "qmtrajectory_sample_run.py" 
 When we run this file it creates output directory and data files.
 Next, it generates 1/f noise (S13) and outputs the data in the current directory
 unless they already exist. This step is followed by the generation of 
@@ -43,7 +43,7 @@ If you run the script "qmtrajectory_sample_run.py" once more
 it generates a new figure without generating the noise data.
 
 
-2) PACKAGE FILES in  "qmtools/":
+2) REQUIRED PACKAGE FILES in  "qmtools/":
 	
 	(a) "quad.py" contains the class hierarchy in the form of UML: 
 	
