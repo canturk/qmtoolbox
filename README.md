@@ -66,11 +66,12 @@ If you repeat the experiment several times, the
 	
 
 	(c) "qsim.py" contains a class called QuadSim which has an object 
-	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. 
+	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. The 
+	UML below shows the relationship between QuadSim and QuadMeasure.
 	
 
                        +-------------+                +-------------+
-                       | QuadMeasure |----------------|   QuadSim   |
+                       | QuadMeasure |--------------<>|   QuadSim   |
                        +------^------+                +-------------+
                              / \
                               |
