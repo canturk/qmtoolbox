@@ -31,20 +31,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
 ## 2. Description of Simulation ToolBox (QMToolBox)
 
-### 2.1 Main File ("qmtrajectory_sample_run.py")
- When we run this file, 
- - First, creates output directory and data file names.
- - Second, checks whether the data for 1/f noise exist in the current directory. 
- If not, then generates them using (S13).
- - Third, simulates the trajectory of the quadrature measurement and generates the data. 
- - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
- in the directory.
- 
- If you run this file once more, it simulates the trajectory and plot a new figure 
- without generating the noise data.
-
-
-### 2.2 Classes and Modules in Package directory ("qmtools/"):
+### 2.1 Classes and Modules in Package directory ("qmtools/"):
 	
 #### (a) "quad.py" consists of class hierarchy, shown in UML: 
      
@@ -100,6 +87,18 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 #### (d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
 #### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
+
+### 2.2 Main File ("qmtrajectory_sample_run.py")
+ When we run this file, 
+ - First, creates output directory and data file names.
+ - Second, checks whether the data for 1/f noise exist in the current directory. 
+ If not, then generates them using (S13).
+ - Third, simulates the trajectory of the quadrature measurement and generates the data. 
+ - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
+ in the directory.
+ 
+ If you run this file once more, it simulates the trajectory and plot a new figure 
+ without generating the noise data.
 	
 	
 ## 3. REFERENCE: 
