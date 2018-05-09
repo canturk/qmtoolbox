@@ -162,23 +162,7 @@ class QuadMeasure(object):
         cpmg[02]: 0.11, 1.14, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 1.14, 0.11
                 :
         cpmg[25]: 0.11, 1.14, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 2.27, 0.23, 1.14, 0.11
-        #-----------------------------
-        
-        PULSE SYNCHRONIZATION:
-        2017/03/19-1230pm
-        Hi,
-        Reforwarding two emails sent yesterday, cant tell what got lost.
-        The measurement of one quadrature dependens on timing. 
-        All the sequences have to start at multiples of T_HO, 
-        otherwise at each measurement you look at a rotated quadrature.
-        I can talk for a bit if this is useful.
-        Best,
-        Adrian
-        
-        2017/03/19-342pm
-        Thanks for the information and the emails. 
-        Please see the attached sketch that represents a single CPMG pulse 
-        and a single Measurement. 
+        #----------------------------------------------------------
 
         0  1    2    3        4    5    6  7                     8
         +--+    +----+        +----+    +--+ +++++++++++         +--+    +----+
