@@ -82,9 +82,9 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		
 	
 #### (c) "qutil.py" consists of 
-		- Call-back functions for Hamiltonian (S15) 
-		- Modules for data processing and  visual representations using matplotlib
-		- Saves data/figures in the destination directory, 
+        * Call-back functions for Hamiltonian (S15) 
+        * Modules for data processing and  visual representations using matplotlib
+		* Saves data/figures in the destination directory, 
 		
 #### (d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
