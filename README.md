@@ -29,7 +29,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
 
 
- 2. DESCRIPTION OF SIMULATION TOOLBOX ("qmtoolbox/")
+2. DESCRIPTION OF SIMULATION TOOLBOX ("qmtoolbox/")
 
  2.1 RUN FILE ("qmtrajectory_sample_run.py")
  When we run this file, 
@@ -40,7 +40,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
  in the directory.
  
- If you run this file once more it simulates the trajectory and plot a new figure 
+ If you run this file once more, it simulates the trajectory and plot a new figure 
  without generating the noise data.
 
 
@@ -70,10 +70,8 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
    - Class ThermalQM inherited from QuadMeasure describes thermal inital (or thermal displacement) state of HO
     at a given temperature.
 	
-(b) "qsim.py" contains a class called QuadSim which has an object 
-	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. The 
-	UML below shows the relationship between QuadSim and QuadMeasure.
-	
+(b) "qsim.py" consists of class QuadSim which has a major component class QuadMeasure.
+	The relationship between them is swon in the UML form.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
@@ -85,9 +83,11 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
        +-----------+    +----------+   +-------------+
        | ThermalQM |    |  FockQM  |   | CoherentQM  |
        +-----------+    +----------+   +-------------+
-	
-	- QuadSim manages the simulation of the measurement for various input parameters. 
-		* Computes required parameters from the dictionary to support QuadMeasure
+	 
+   - QuadSim 
+        * Manages the simulation for various input parameters
+        * Instantiates a single object from ThermalQM, FockQMP, or CoherentQMP. 
+		* Computes required parameters from the dictionary 
 		* Obtains simulation results, 
 		* Generates presentation file in LaTeX (beamer) (Removed from this version for simplicity). 
 		
