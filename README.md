@@ -55,13 +55,12 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		- Quadrature measurement protocol(s), 
 		- Evolution of density matrix in CPMG
 		- Solving the master equation
-	 - Generates a measurement trajectory
+	 - Generates the data for a single trajectory
 	
-   - Class ThermalQM inherited from QuadMeasure describes thermal inital (or thermal displacement) state of HO
+   - Class ThermalQM, inherited from QuadMeasure describes thermal state of HO
     at a given temperature.
 	
-#### (b) "qsim.py" consists of class QuadSim which has a major component class QuadMeasure.
-	The relationship between them is swon in the UML form.
+#### (b) "qsim.py" consists of class QuadSim whose major component is QuadMeasure as shown in the UML.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
