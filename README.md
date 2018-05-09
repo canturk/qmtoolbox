@@ -96,7 +96,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  - First, creates output directory and data file names.
  - Second, checks whether the data for 1/f noise exist in the current directory. 
  If not, it generates them using (S13).
- - Third, simulates the measuremetn trajectory and generates data. 
+ - Third, simulates the measurement trajectory and generates data. 
  - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
  in the directory.
  
