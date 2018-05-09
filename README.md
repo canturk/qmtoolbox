@@ -81,10 +81,11 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
-#### (c) "qutil.py" consists of 
+#### (c) "qutil.py" consists of modules for 
    - Call-back functions for Hamiltonian (S15) 
-   - Modules for data processing and  visual representations using matplotlib
-   - Saves data/figures in the destination directory, 
+   - Generation of flux noise
+   - Data processing and  visual representations using matplotlib
+   - Saving data/figures in the destination directory, 
 		
 #### (d) "qpar.py" includes system parameters in the form of dictionary (pars).
 
