@@ -89,12 +89,12 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
         * Instantiates a single object from ThermalQM, FockQMP, or CoherentQMP. 
 		* Computes required parameters from the dictionary 
 		* Obtains simulation results, 
-		* Generates presentation file in LaTeX (beamer) (Removed from this version for simplicity). 
+		* Generates presentation file in LaTeX (beamer). 
 		
 	
-	(c) "qutil.py" consists of 
+(c) "qutil.py" consists of 
 		- Call-back functions for Hamiltonian (S15) 
-		- Module to creates visual and data representations 
+		- Modules for data processing and  visual representations 
 		- Saves data/plots in the destination directory, 
 		
 	(d) "qpar.py" contains a dictionary (pars) for System Parameters.
