@@ -31,7 +31,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
 ## 2. Description of Simulation ToolBox (QMToolBox)
 
-### 2.1 RUN FILE ("qmtrajectory_sample_run.py")
+### 2.1 Main File ("qmtrajectory_sample_run.py")
  When we run this file, 
  - First, creates output directory and data file names.
  - Second, checks whether the data for 1/f noise exist in the current directory. 
@@ -44,7 +44,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  without generating the noise data.
 
 
- 2.2 PACKAGE FILES IN THE SUBDIRECTORY ("qmtools/"):
+### 2.2 Package Files in the subdirectory ("qmtools/"):
 	
 (a) "quad.py" consists of class hierarchy, shown in UML: 
      
