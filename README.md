@@ -97,9 +97,9 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		- Modules for data processing and  visual representations 
 		- Saves data/plots in the destination directory, 
 		
-	(d) "qpar.py" contains a dictionary (pars) for System Parameters.
+(d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
-	(e) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
+(e) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
 	
 	
 3. REFERENCE: 
