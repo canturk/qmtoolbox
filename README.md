@@ -1,9 +1,9 @@
 # qmtoolbox
 Simulation ToolBox for Quadrature Measurement of Quantum Harmonic Oscillator using Qubit
 
- 1. INTRODUCTION
+## 1. INTRODUCTION
 
-This package is devoted to simulate quadrature detection protocol of a harmonic
+This toolbox is developed to simulate quadrature detection protocol of a harmonic
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
 a time-dependent Hamiltonian (S15) in the supplamentary material [1]. 
 It performs high fedelity measurement and generate squeezed states of the HO
