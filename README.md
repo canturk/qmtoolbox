@@ -44,7 +44,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  without generating the noise data.
 
 
-### 2.2 Package Files in the subdirectory ("qmtools/"):
+### 2.2 Classes and Modules in Package directory ("qmtools/"):
 	
 #### (a) "quad.py" consists of class hierarchy, shown in UML: 
      
@@ -70,7 +70,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
    - Class ThermalQM inherited from QuadMeasure describes thermal inital (or thermal displacement) state of HO
     at a given temperature.
 	
-(b) "qsim.py" consists of class QuadSim which has a major component class QuadMeasure.
+#### (b) "qsim.py" consists of class QuadSim which has a major component class QuadMeasure.
 	The relationship between them is swon in the UML form.
 
                        +-------------+                +-------------+
@@ -92,14 +92,14 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
-(c) "qutil.py" consists of 
+#### (c) "qutil.py" consists of 
 		- Call-back functions for Hamiltonian (S15) 
 		- Modules for data processing and  visual representations 
 		- Saves data/plots in the destination directory, 
 		
-(d) "qpar.py" contains a dictionary (pars) for System Parameters.
+#### (d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
-(e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
+#### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
 	
 	
 ## 3. REFERENCE: 
