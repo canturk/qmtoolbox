@@ -67,7 +67,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 	 - Simulates the measurement, and 
 	 - Generates a measurement trajectory
 	
-   - ThermalQM describes thermal inital (or thermal displacement) state of HO
+   - Class ThermalQM inherited from QuadMeasure describes thermal inital (or thermal displacement) state of HO
     at a given temperature.
 	
 (b) "qsim.py" contains a class called QuadSim which has an object 
