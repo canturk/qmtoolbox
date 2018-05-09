@@ -51,7 +51,10 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
    
    - Class QuadMeasure defines a quadrature measurement protocol for the coupled system: 
 	 - Setups quantum operators, Hamiltonian, and Lindblad Master equation for qubit-HO system, 
-	 - Simulates the measurement, and 
+	 - Algorithms for 
+		- Quadrature measurement protocol(s), 
+		- Evolution of density matrix in CPMG
+		- Solving the master equation
 	 - Generates a measurement trajectory
 	
    - Class ThermalQM inherited from QuadMeasure describes thermal inital (or thermal displacement) state of HO
