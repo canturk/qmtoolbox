@@ -46,7 +46,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
 ### 2.2 Package Files in the subdirectory ("qmtools/"):
 	
-(a) "quad.py" consists of class hierarchy, shown in UML: 
+#### (a) "quad.py" consists of class hierarchy, shown in UML: 
      
                        +-------------+
                        | QuadMeasure |
@@ -102,7 +102,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
 	
 	
-3. REFERENCE: 
+## 3. REFERENCE: 
 
 [1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
 of squeezed states of a harmonic oscillator using a qubit-based indirect 
