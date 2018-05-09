@@ -1,7 +1,7 @@
 # qmtoolbox
 Simulation ToolBox for Quadrature Measurement of Harmonic Oscillator using Qubit
 
-1. INTRODUCTION
+ 1. INTRODUCTION
 
 This package is devoted to simulate quadrature detection protocol of a harmonic
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
@@ -28,22 +28,25 @@ are obtained by series repetition of the protocol illustrated in Fig.S1.
 A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result.png".
 
 
-2. DESCRIPTION OF SIMULATION TOOLBOX (qmtoolbox)
 
- 2.1 MAIN FILE TO RUN: "qmtrajectory_sample_run.py" 
- When we run this file, first, it creates output directory and data files.
- Second, it generates 1/f noise data using (S13) in the current directory
- unless the data already exist. Third, it simulates and generates 
- the data for the trajectory of the quadrature measurement. 
- Finally it plots and store the figure shown in "qtrajectory_sample_result.png" 
+ 2. DESCRIPTION OF SIMULATION TOOLBOX ("qmtoolbox/")
+
+ 2.1 RUN FILE ("qmtrajectory_sample_run.py")
+ When we run this file, 
+ - First, creates output directory and data file names.
+ - Second, checks whether the data for 1/f noise exist in the current directory. 
+ If not, then generates them using (S13).
+ - Third, simulates the trajectory of the quadrature measurement and generates the data. 
+ - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
  in the directory.
  
- If you run the script "qmtrajectory_sample_run.py" once more
- it generates a new figure without generating the noise data.
+ If you run this file once more it simulates the trajectory and plot a new figure 
+ without generating the noise data.
 
-2.2 REQUIRED PACKAGE FILES in  "qmtools/":
+
+ 2.2 REQUIRED PACKAGE FILES in  "qmtools/":
 	
-	(a) "quad.py" contains the class hierarchy in the form of UML: 
+    (a) "quad.py" consists of class hierarchy, shown in UML: 
 	
 
                        +-------------+
@@ -57,7 +60,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
        | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
        +-----------+    +----------+   +-------------+
 	   
-	(*) The code for FockQM and CoherentQM "quad.py" does not exist.
+    (*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
 	- QuadMeasure, a base class, defines a quadrature measurement protocol 
 	for HO coupled to the qubit. It setups qubit-HO systems, and simulates
