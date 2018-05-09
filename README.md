@@ -77,14 +77,14 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
         * Manages the simulation for various input parameters
         * Instantiates a single object from ThermalQM, FockQMP, or CoherentQMP. 
 		* Computes required parameters from the dictionary 
-		* Obtains simulation results, 
+		* Performs the simulation and returns outcomes, 
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
 #### (c) "qutil.py" consists of 
 		- Call-back functions for Hamiltonian (S15) 
-		- Modules for data processing and  visual representations 
-		- Saves data/plots in the destination directory, 
+		- Modules for data processing and  visual representations using matplotlib
+		- Saves data/figures in the destination directory, 
 		
 #### (d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
@@ -94,12 +94,12 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  When we run this file, 
  - First, creates output directory and data file names.
  - Second, checks whether the data for 1/f noise exist in the current directory. 
- If not, then generates them using (S13).
- - Third, simulates the trajectory of the quadrature measurement and generates the data. 
+ If not, it generates them using (S13).
+ - Third, simulates the measuremetn trajectory and generates data. 
  - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
  in the directory.
  
- If you run this file once more, it simulates the trajectory and plot a new figure 
+ Notice that if you run this file once more, it simulates the trajectory and plot a new figure 
  without generating the noise data.
 	
 	
