@@ -46,7 +46,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
  2.2 PACKAGE FILES IN THE SUBDIRECTORY ("qmtools/"):
 	
-    (a) "quad.py" consists of class hierarchy, shown in UML: 
+(a) "quad.py" consists of class hierarchy, shown in UML: 
      
                        +-------------+
                        | QuadMeasure |
@@ -62,9 +62,8 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
     (*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
    
-    - QuadMeasure, a base class, defines a quadrature measurement protocol 
-	for HO coupled to the qubit. It setups qubit-HO systems, and simulates
-	quadrature measurement and generates a measurement trajectory.
+   - QuadMeasure, base class, defines a quadrature measurement protocol for the coupled system. 
+	It setups qubit-HO systems, and simulates quadrature measurement and generates a measurement trajectory.
 	
 	- ThermalQM, inherited from QuadMeasure, describes either 
 	thermal inital state or initial thermal displacement state of HO
