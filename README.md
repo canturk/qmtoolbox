@@ -99,7 +99,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 		
 (d) "qpar.py" contains a dictionary (pars) for System Parameters.
 
-(e) "\_\_init\_\_.py" used to mark "qmtools/" as Python package directory
+(e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
 	
 	
 3. REFERENCE: 
