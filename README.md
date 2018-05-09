@@ -47,6 +47,7 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  2.2 REQUIRED PACKAGE FILES in  "qmtools/":
 	
     (a) "quad.py" consists of class hierarchy, shown in UML: 
+     
 	
 
                        +-------------+
