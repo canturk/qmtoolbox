@@ -62,15 +62,15 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
     (*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
    
-   - QuadMeasure, base class, defines a quadrature measurement protocol for the coupled system. 
-	It setups qubit-HO systems, and simulates quadrature measurement and generates a measurement trajectory.
+   - Class QuadMeasure defines a quadrature measurement protocol for the coupled system: 
+	 - Setups quantum operators, Hamiltonian, and Lindblad Master equation for qubit-HO system, 
+	 - Simulates the measurement, and 
+	 - Generates a measurement trajectory
 	
-	- ThermalQM, inherited from QuadMeasure, describes either 
-	thermal inital state or initial thermal displacement state of HO
+   - ThermalQM describes thermal inital (or thermal displacement) state of HO
     at a given temperature.
 	
-
-	(b) "qsim.py" contains a class called QuadSim which has an object 
+(b) "qsim.py" contains a class called QuadSim which has an object 
 	instantiated from one of FockQMP, CoherentQMP or ThermalQMP. The 
 	UML below shows the relationship between QuadSim and QuadMeasure.
 	
