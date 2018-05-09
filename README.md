@@ -1,5 +1,5 @@
 # qmtoolbox
-Simulation ToolBox for Quadrature Measurement of Harmonic Oscillator using Qubit
+Simulation ToolBox for Quadrature Measurement of Quantum Harmonic Oscillator using Qubit
 
  1. INTRODUCTION
 
