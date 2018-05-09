@@ -44,12 +44,10 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
  without generating the noise data.
 
 
- 2.2 REQUIRED PACKAGE FILES in  "qmtools/":
+ 2.2 PACKAGE FILES IN THE SUBDIRECTORY ("qmtools/"):
 	
     (a) "quad.py" consists of class hierarchy, shown in UML: 
      
-	
-
                        +-------------+
                        | QuadMeasure |
                        +------.------+
@@ -63,7 +61,8 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 	   
     (*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
-	- QuadMeasure, a base class, defines a quadrature measurement protocol 
+   
+    - QuadMeasure, a base class, defines a quadrature measurement protocol 
 	for HO coupled to the qubit. It setups qubit-HO systems, and simulates
 	quadrature measurement and generates a measurement trajectory.
 	
