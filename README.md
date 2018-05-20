@@ -88,7 +88,7 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
    - Data processing and  visual representations using matplotlib
    - Saving data/figures in the destination directory, 
 		
-#### (d) "_qmtools/qpar.py_" includes system parameters in the form of dictionary (pars).
+#### (d) "_qmtools/qpar.py_" includes system parameters in the form of dictionary (_pars_).
 
 
 ### 2.2 Main File "_qmtrajectory_sample_run.py_"
