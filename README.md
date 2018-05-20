@@ -17,8 +17,8 @@ in thermal (or coherent or Fock) state respectively.
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically computed by *mesolve* in [QuTiP] 
-(www.qutip.org) governed by the Hamiltonian (S15). 
+free precession times is numerically computed by *mesolve* in 
+[QuTiP](www.qutip.org) governed by the Hamiltonian (S15). 
 The influence of the qubit dephasing induced by its intrinsic environment
 or 1/f noise (S13) is considered in the Hamiltonian (S15). Similarly, 
 the contribution of the dissipated effects of the coupled system 
@@ -32,9 +32,9 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 
 ## 2. Description of Simulation ToolBox (QMToolBox)
 
-### 2.1 Classes and Modules in "_qmtools/_":
+### 2.1 Classes and Modules in package directory "_qmtools/_":
 	
-#### (a) "_quad.py_" consists of class hierarchy as shown in UML below: 
+#### (a) "_qmtools/quad.py_" consists of class hierarchy as shown in UML below: 
      
                        +-------------+
                        | QuadMeasure |
@@ -61,7 +61,7 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
    - Class **ThermalQM**, inherited from **QuadMeasure** describes thermal state of HO
     at a given temperature.
 	
-#### (b) "_qsim.py_" consists of class **QuadSim** whose major component is **QuadMeasure** as shown in the UML.
+#### (b) "_qmtools/qsim.py_" consists of class **QuadSim** whose major component is **QuadMeasure** as shown in the UML.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
@@ -82,15 +82,15 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
-#### (c) "_qutil.py_" consists of modules for 
+#### (c) "_qmtools/qutil.py_" consists of modules for 
    - Call-back functions for Hamiltonian (S15) 
    - Generation of flux noise
    - Data processing and  visual representations using matplotlib
    - Saving data/figures in the destination directory, 
 		
-#### (d) "_qpar.py_" includes system parameters in the form of dictionary (pars).
+#### (d) "_qmtools/qpar.py_" includes system parameters in the form of dictionary (pars).
 
-#### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
+#### (e) "_qmtools/\_\_init\_\_.py_" marks the package directory (_qmtools/_)
 
 ### 2.2 Main File "_qmtrajectory_sample_run.py_"
  When we run this file, it
