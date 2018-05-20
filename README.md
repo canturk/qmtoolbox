@@ -90,7 +90,7 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 		
 #### (d) "_qmtools/qpar.py_" includes system parameters in the form of dictionary (pars).
 
-#### (e) "_qmtools/\_\_init\_\_.py_" marks the package directory (_qmtools/_)
+[//]: # ( (e) "_qmtools/\_\_init\_\_.py_" marks the package directory (_qmtools/_) )
 
 ### 2.2 Main File "_qmtrajectory_sample_run.py_"
  When we run this file, it
@@ -109,6 +109,6 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 
 [1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
 of squeezed states of a harmonic oscillator using a qubit-based indirect 
-measurement, arXiv:1704.04533, (2017)
+measurement, [arXiv:1704.04533, (2017)](https://arxiv.org/abs/1704.04533)
 
 
