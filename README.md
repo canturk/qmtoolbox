@@ -32,9 +32,9 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 
 ## 2. Description of Simulation ToolBox (QMToolBox)
 
-### 2.1 Classes and Modules in Package directory ("qmtools/"):
+### 2.1 Classes and Modules in "_qmtools/_":
 	
-#### (a) "quad.py" consists of class hierarchy, shown in UML: 
+#### (a) "_quad.py_" consists of class hierarchy as shown in UML below: 
      
                        +-------------+
                        | QuadMeasure |
@@ -47,10 +47,10 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
        | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
        +-----------+    +----------+   +-------------+
 	   
-    (*) The code for FockQM and CoherentQM "quad.py" does not exist.
+    (*) For simplicity, the code for **_FockQM_** and **_CoherentQM_** "_quad.py_" does not exist.
 	
    
-   - Class QuadMeasure defines a quadrature measurement protocol for the coupled system: 
+   - Class **QuadMeasure** defines a quadrature measurement protocol for the coupled system: 
 	 - Setups quantum operators, Hamiltonian, and Lindblad Master equation for qubit-HO system, 
 	 - Algorithms for 
 		- Quadrature measurement protocol(s), 
