@@ -9,14 +9,15 @@ a time-dependent Hamiltonian (S15) in the supplamentary material [1].
 It performs high fedelity measurement and generate squeezed states of the HO
 which can be either electrical or mechanical resonator.
 
-The measurement protocol consists of repeating procedure in Fig.S1 [1]. 
+The measurement protocol, which is based on quantum nondemolishing measurement 
+type protocol, consists of repeating procedure in Fig.S1 [1]. 
 The qubit and HO start in a separable state where qubit is in ground and HO 
 in thermal (or coherent or Fock) state respectively.
 
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
-as shown in Fig.1(a) or Fig.S1. The evolution of combined system described by 
+as shown in Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically computed by mesolve in QuTiP 
+free precession times is numerically computed by *mesolve* in QuTiP 
 [www.qutip.org] governed by the Hamiltonian (S15). 
 The influence of the qubit dephasing induced by its intrinsic environment
 or 1/f noise (S13) is considered in the Hamiltonian (S15). Similarly, 
@@ -25,7 +26,7 @@ are considered in the master equation (S14).
 
 The outcome of measurement trajectory of the quadrature and variance 
 are obtained by series repetition of the protocol illustrated in Fig.S1.
-A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result.png".
+A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_result.png_".
 
 
 
