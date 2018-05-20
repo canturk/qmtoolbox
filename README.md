@@ -17,8 +17,8 @@ in thermal (or coherent or Fock) state respectively.
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically computed by *mesolve* in QuTiP 
-[www.qutip.org] governed by the Hamiltonian (S15). 
+free precession times is numerically computed by *mesolve* in [QuTiP] 
+(www.qutip.org) governed by the Hamiltonian (S15). 
 The influence of the qubit dephasing induced by its intrinsic environment
 or 1/f noise (S13) is considered in the Hamiltonian (S15). Similarly, 
 the contribution of the dissipated effects of the coupled system 
@@ -47,7 +47,7 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
        | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
        +-----------+    +----------+   +-------------+
 	   
-    (*) For simplicity, the code for **_FockQM_** and **_CoherentQM_** "_quad.py_" does not exist.
+    (*) For simplicity, the code for FockQM and CoherentQM "qmtools/quad.py" does not exist.
 	
    
    - Class **QuadMeasure** defines a quadrature measurement protocol for the coupled system: 
@@ -58,10 +58,10 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
 		- Solving the master equation
 	 - Generates the data for a single trajectory
 	
-   - Class ThermalQM, inherited from QuadMeasure describes thermal state of HO
+   - Class **ThermalQM**, inherited from **QuadMeasure** describes thermal state of HO
     at a given temperature.
 	
-#### (b) "qsim.py" consists of class QuadSim whose major component is QuadMeasure as shown in the UML.
+#### (b) "_qsim.py_" consists of class **QuadSim** whose major component is **QuadMeasure** as shown in the UML.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
@@ -74,31 +74,31 @@ A sample trajectory is obtained by this tool is shown "_qtrajectory_sample_resul
        | ThermalQM |    |  FockQM  |   | CoherentQM  |
        +-----------+    +----------+   +-------------+
 	 
-   - QuadSim 
+   - **QuadSim** 
         * Manages the simulation for various input parameters
-        * Instantiates a single object from ThermalQM, FockQMP, or CoherentQMP. 
+        * Instantiates an object from **ThermalQM**, **FockQMP**, or **CoherentQMP**. 
 		* Computes required parameters from the dictionary 
 		* Performs the simulation and returns outcomes, 
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
-#### (c) "qutil.py" consists of modules for 
+#### (c) "_qutil.py_" consists of modules for 
    - Call-back functions for Hamiltonian (S15) 
    - Generation of flux noise
    - Data processing and  visual representations using matplotlib
    - Saving data/figures in the destination directory, 
 		
-#### (d) "qpar.py" includes system parameters in the form of dictionary (pars).
+#### (d) "_qpar.py_" includes system parameters in the form of dictionary (pars).
 
 #### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
 
-### 2.2 Main File ("qmtrajectory_sample_run.py")
- When we run this file, 
- - First, creates output directory and data file names.
- - Second, checks whether the data for 1/f noise exist in the current directory. 
+### 2.2 Main File "_qmtrajectory_sample_run.py_"
+ When we run this file, it
+ - creates output directory and data file names.
+ - checks whether the data for 1/f noise exist in the current directory. 
  If not, it generates them using (S13).
- - Third, simulates the measurement trajectory and generates data. 
- - Finally plots the figure as shown in "qtrajectory_sample_result.png" and stores
+ - simulates the measurement trajectory and generates data. 
+ - plots the figure as shown in "_qtrajectory_sample_result.png_" and stores
  in the directory.
  
  Notice that if you run this file once more, it simulates the trajectory and plot a new figure 
