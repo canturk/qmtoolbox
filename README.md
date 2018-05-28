@@ -22,7 +22,7 @@ in thermal (or coherent or Fock) state respectively.
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.1(a) or Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically computed by mesolve in QuTiP [www.qutip.org] 
+free precession times is numerically computed by mesolve in [QuTiP](www.qutip.org) 
 governed by the Hamiltonian (S15). 
 The influence of the qubit dephasing induced by its intrinsic environment
 or 1/f noise (S13) is considered in the Hamiltonian (S15). Similarly, 
@@ -31,7 +31,8 @@ are considered in the master equation (S14).
 
 The outcome of measurement trajectory of the quadrature and variance 
 are obtained by series repetition of the protocol illustrated in Fig.S1.
-A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result.png".
+A sample trajectory is obtained by this tool is shown 
+"[qtrajectory_sample_result.png](https://github.com/canturk/qmtoolbox/blob/master/qtrajectory_sample_result.png)".
 
 
 
@@ -114,6 +115,6 @@ A sample trajectory is obtained by this tool is shown "qtrajectory_sample_result
 
 [1] Mehmet Canturk and Adrian Lupascu, Quadrature readout and generation 
 of squeezed states of a harmonic oscillator using a qubit-based indirect 
-measurement, arXiv:1704.04533, (2017)
+measurement, [arXiv:1704.04533, (2017)](https://arxiv.org/pdf/1704.04533.pdf)
 
 
