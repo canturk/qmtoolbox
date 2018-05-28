@@ -7,9 +7,9 @@ This toolbox is developed to simulate quadrature detection protocol of a harmoni
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
 a time-dependent Hamiltonian (S15) in the supplamentary material [1]. 
 Repeated measurement of the qubit (based on quantum nondemolishing measurement)
-leads to gradually increasing information on the quadrature I, and 
+leads to gradually increasing information on the quadrature $$I$$, and 
 a corresponding reduction in the uncertainty
-$\Delta$I corresponding to squeezing state of HO.
+$$\Delta I$$ corresponding to squeezing state of HO.
 The detection protocol in this toolbox realistically simulates
 the measurement of superconducting
 electromagnetic resonators and nano-mechanical
