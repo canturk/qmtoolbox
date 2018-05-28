@@ -6,13 +6,19 @@ Simulation ToolBox for Quadrature Measurement of Quantum Harmonic Oscillator usi
 This toolbox is developed to simulate quadrature detection protocol of a harmonic
 oscilator (HO) coupled to a superconducting flux qubit (quantum bit) with 
 a time-dependent Hamiltonian (S15) in the supplamentary material [1]. 
-It performs high fedelity measurement and generate squeezed states of the HO
-which can be either electrical or mechanical resonator.
+Repeated measurement of the qubit (based on quantum nondemolishing measurement)
+leads to gradually increasing information on the quadrature I, and 
+a corresponding reduction in the uncertainty
+$\Delta$I corresponding to squeezing state of HO.
+The detection protocol in this toolbox realistically simulates
+the measurement of superconducting
+electromagnetic resonators and nano-mechanical
+resonators, taking into account non-idealities including
+decoherence and qubit detection errors.
 
-The measurement protocol consists of repeating procedure in Fig.S1 [1]. 
+The detection protocol consists of repeating procedure as shown in Fig.S1 [1]. 
 The qubit and HO start in a separable state where qubit is in ground and HO 
 in thermal (or coherent or Fock) state respectively.
-
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.1(a) or Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
