@@ -14,7 +14,7 @@ The detection protocol in this toolbox realistically simulates
 the measurement of superconducting
 electromagnetic resonators and nano-mechanical
 resonators, taking into account non-idealities including
-decoherence and qubit detection errors.
+decoherence and qubit detection errors. 
 
 The detection protocol consists of repeating procedure as shown in Fig.S1 [1]. 
 The qubit and HO start in a separable state where qubit is in ground and HO 
