@@ -38,9 +38,9 @@ A sample trajectory is obtained by this tool is shown
 
 ## 2. Description of Simulation ToolBox (QMToolBox)
 
-### 2.1 Classes and Modules in Package directory ("qmtools/"):
+### 2.1 Classes and Modules in Package directory ("[qmtools/](https://github.com/canturk/qmtoolbox/blob/master/qmtools)"):
 	
-#### (a) "quad.py" consists of class hierarchy, shown in UML: 
+#### (a) "[quad.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/quad.py)" consists of class hierarchy, shown in UML: 
      
                        +-------------+
                        | QuadMeasure |
@@ -67,7 +67,7 @@ A sample trajectory is obtained by this tool is shown
    - Class ThermalQM, inherited from QuadMeasure describes thermal state of HO
     at a given temperature.
 	
-#### (b) "qsim.py" consists of class QuadSim whose major component is QuadMeasure as shown in the UML.
+#### (b) "[qsim.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qsim.py)" consists of class QuadSim whose major component is QuadMeasure as shown in the UML.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
@@ -88,17 +88,17 @@ A sample trajectory is obtained by this tool is shown
 		* Generates presentation file in LaTeX (beamer). 
 		
 	
-#### (c) "qutil.py" consists of modules for 
+#### (c) "[qutil.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qutil.py)" consists of modules for 
    - Call-back functions for Hamiltonian (S15) 
    - Generation of flux noise
    - Data processing and  visual representations using matplotlib
    - Saving data/figures in the destination directory, 
 		
-#### (d) "qpar.py" includes system parameters in the form of dictionary (pars).
+#### (d) "[qpar.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qpar.py)" includes system parameters in the form of dictionary (pars).
 
-#### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory
+#### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory  <br />
 
-### 2.2 Main File ("qmtrajectory_sample_run.py")
+### 2.2 Main File ("[qmtrajectory_sample_run.py](https://github.com/canturk/qmtoolbox/blob/master/qmtrajectory_sample_run.py)")
  When we run this file, 
  - First, creates output directory and data file names.
  - Second, checks whether the data for 1/f noise exist in the current directory. 
