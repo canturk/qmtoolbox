@@ -56,7 +56,7 @@ A sample trajectory is obtained by this tool is shown
     (*) The code for FockQM and CoherentQM "quad.py" does not exist.
 	
    
-   - Class QuadMeasure defines a quadrature measurement protocol for the coupled system: 
+   - Class **QuadMeasure** defines a quadrature measurement protocol for the coupled system: 
 	 - Setups quantum operators, Hamiltonian, and Lindblad Master equation for qubit-HO system, 
 	 - Algorithms for 
 		- Quadrature measurement protocol(s), 
@@ -64,10 +64,10 @@ A sample trajectory is obtained by this tool is shown
 		- Solving the master equation
 	 - Generates the data for a single trajectory
 	
-   - Class ThermalQM, inherited from QuadMeasure describes thermal state of HO
+   - Class **ThermalQM**, inherited from **QuadMeasure** describes thermal state of HO
     at a given temperature.
 	
-#### (b) "[qsim.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qsim.py)" consists of class QuadSim whose major component is QuadMeasure as shown in the UML.
+#### (b) "[qsim.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qsim.py)" consists of class QuadSim whose major component is **QuadMeasure** as shown in the UML.
 
                        +-------------+                +-------------+
                        | QuadMeasure |--------------<>|   QuadSim   |
@@ -80,9 +80,9 @@ A sample trajectory is obtained by this tool is shown
        | ThermalQM |    |  FockQM  |   | CoherentQM  |
        +-----------+    +----------+   +-------------+
 	 
-   - QuadSim 
+   - **QuadSim** 
         * Manages the simulation for various input parameters
-        * Instantiates a single object from ThermalQM, FockQMP, or CoherentQMP. 
+        * Instantiates a single object from **ThermalQM**, **FockQMP**, or **CoherentQMP**. 
 		* Computes required parameters from the dictionary 
 		* Performs the simulation and returns outcomes, 
 		* Generates presentation file in LaTeX (beamer). 
@@ -96,7 +96,6 @@ A sample trajectory is obtained by this tool is shown
 		
 #### (d) "[qpar.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qpar.py)" includes system parameters in the form of dictionary (pars).
 
-#### (e) "\_\_init\_\_.py" marks "qmtools/" as a package directory  <br />
 
 ### 2.2 Main File ("[qmtrajectory_sample_run.py](https://github.com/canturk/qmtoolbox/blob/master/qmtrajectory_sample_run.py)")
  When we run this file, 
