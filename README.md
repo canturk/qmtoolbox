@@ -22,7 +22,7 @@ in thermal (or coherent or Fock) state respectively.
 The qubit is controlled by resonant pulses (e.g spin echo or CPMG sequence)
 as shown in Fig.1(a) or Fig.S1. The evolution of combined system described by 
 master equation in Lindblad form (S14) within control pulse and 
-free precession times is numerically computed by mesolve in QuTiP[www.qutip.org] 
+free precession times is numerically computed by mesolve in QuTiP [www.qutip.org] 
 governed by the Hamiltonian (S15). 
 The influence of the qubit dephasing induced by its intrinsic environment
 or 1/f noise (S13) is considered in the Hamiltonian (S15). Similarly, 
