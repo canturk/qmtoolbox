@@ -53,7 +53,7 @@ A sample trajectory is obtained by this tool is shown
        | ThermalQM |    | FockQM(*)|   |CoherentQM(*)|
        +-----------+    +----------+   +-------------+
 	   
-    (*) The code for FockQM and CoherentQM "quad.py" does not exist.
+    (*) The class definitions for FockQM and CoherentQM were removed from "quad.py".
 	
    
    - Class **QuadMeasure** defines a quadrature measurement protocol for the coupled system: 
@@ -85,7 +85,7 @@ A sample trajectory is obtained by this tool is shown
         * Instantiates a single object from **ThermalQM**, **FockQMP**, or **CoherentQMP**. 
 		* Computes required parameters from the dictionary 
 		* Performs the simulation and returns outcomes, 
-		* Generates presentation file in LaTeX (beamer). 
+		* ~~Generates presentation file in LaTeX (beamer).~~ 
 		
 	
 #### (c) "[qutil.py](https://github.com/canturk/qmtoolbox/blob/master/qmtools/qutil.py)" consists of modules for 
